@@ -2,35 +2,18 @@ package printarray;
 
 public class PrintArray {
 
-	//@method to display integer values
-	public static void toPrint(Integer[] inputArray)     
+	//@method to display  values using generic approach
+	public static <E> void toPrint(E[] inputArray)     
 	{
-		for(int element:inputArray)
+		for(E element:inputArray)
 		{
 			System.out.printf("%s ",element);
 		}
 		System.out.println();
 	}
 	
-	//@method to display double values
-	public static void toPrint(Double[] inputArray)
-	{
-		for(double element:inputArray)
-		{
-			System.out.printf("%s ",element);
-		}
-		System.out.println();
-	}
 	
-	//@method to display character values
-	public static void toPrint(Character[] inputArray)
-	{
-		for(char element:inputArray)
-		{
-			System.out.printf("%s ",element);
-		}
-		System.out.println();
-	}
+	
 	
 	
 	
